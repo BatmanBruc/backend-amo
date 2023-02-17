@@ -1,4 +1,3 @@
-import { Result } from './../types';
 import { Body, Controller, Post, Res } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { Response } from 'express';

@@ -1,4 +1,4 @@
-import axios, { AxiosResponse } from 'axios';
+import axios from 'axios';
 import { Result } from './../types';
 import { Injectable } from '@nestjs/common';
 
@@ -22,7 +22,10 @@ export class EntitiesService {
           name: enitity_string,
         },
       ]);
-      if (String(response.status)[0] == '4') {
+      if (
+        String(response.status)[0] == '4' ||
+        String(response.status)[0] == '5'
+      ) {
         return {
           status: response.status,
           success: false,
