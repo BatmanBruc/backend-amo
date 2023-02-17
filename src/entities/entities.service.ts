@@ -1,6 +1,5 @@
-import { ErrorResult } from './../../dist/types.d';
 import axios from 'axios';
-import { Result, SuccessResult } from './../types';
+import { SuccessResult, ErrorResult } from './../types';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
